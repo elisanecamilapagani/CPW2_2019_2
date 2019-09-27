@@ -1,0 +1,18 @@
+Criar um app (site) com 2 páginas.
+
+Primeira página:
+
+- Deve conter um campo de texto onde o usuário possa digitar uma frase
+- Deve conter um botão intitulado "Verificar"
+- Quando o usuário clicar no botão, seu app deve verificar se a frase é um palíndromo
+- Restrição: a verificação só deverá ser realizada se o usuário digitou algum caractere no campo
+- Site com exemplos de palíndromos: https://www.todamateria.com.br/palindromo/
+
+Segunda página:
+
+- Deve conter dois campos de texto onde o usuário possa digitar frases
+- Deve conter um botão intitulado "Verificar"
+- Quando o usuário clicar no botão, seu app deve verificar se a segunda frase está contida na primeira frase
+- Restrição: a verificação só deverá ser realizada se o usuário digitou algum caractere em cada campo
+
+A atividade deve ser realizada individualmente ou em dupla (usando apenas um computador) e deve ser finalizada até as aulas do dia 30/08.

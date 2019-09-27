@@ -1,0 +1,48 @@
+.leituraDados {
+  width: 35%;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5%;
+}
+.leituraDados * {
+  display: block;
+  margin-bottom: 5px;
+}
+.leituraDados input {
+  font-size: 110%;
+  height: 15px;
+  border-radius: 5px;
+  border: 1px solid #bbbbbb;
+  padding: 3px;
+}
+.leituraDados button {
+  font-size: 100%;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.campo1 {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.campo2 {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+#mensagem {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 2px;
+  font-weight: bold;
+  padding: 5px;
+  width: 30%;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+/*# sourceMappingURL=estilos.css.map */

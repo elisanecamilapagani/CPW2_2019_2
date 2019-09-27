@@ -1,0 +1,43 @@
+.leituraDados{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(160, 158, 158);
+    width: 40%;
+
+
+    *{        
+        display: block;
+        margin-bottom: 20px;        
+    }
+        
+}
+
+label {
+    margin: 20px 0px 10px 25px;
+
+}
+
+input {
+    font-size: 130%;
+    height: 25px;    
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    padding: 3px;
+    margin-top: 10px; margin-left:25px;
+}
+
+button {
+    font-size: 150%;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 6px; 
+    margin-left: 25px; margin-top: 10px;
+}
+
+#mensagem{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2px;
+    font-weight: bold; 
+    padding: 5px;
+    width: 30%;   
+}

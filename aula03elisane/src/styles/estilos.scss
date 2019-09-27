@@ -1,0 +1,89 @@
+@import "cores";
+@import "fontes";
+
+
+#header{
+
+    background-color: $cor-header;
+    padding:  30px,50px;
+    width: 333px;
+    margin-bottom: 5px;
+
+}
+
+*{
+    display: inline;
+    vertical-align: middle;
+}
+
+img{
+
+    width: 50px;
+    margin-right: 20px;
+}
+
+h1{
+    font-family: $fonte-decorativa;
+    color:wheat;
+}
+
+
+
+
+
+
+
+#formularioContato{
+
+    padding: 10px; // espaco na borda do lado
+    border: 10px; // coloca uma borda 
+    width: 400px; //diminui a borda
+    
+    
+
+    label , input{
+        
+        display: block;
+       
+    }
+
+    input{
+        margin-bottom: 10px;
+    
+
+      // concatena somentes os input que tem text   
+        // &[type=text], quiser colocar pra todos so adiciona o nome do input
+
+        &[type=text] , &[type=tel], &[type=email],  &[type=date], &[type=submit]
+        {
+        height: 20px; // altura do campo de texto
+        width: 270px;// almenta o campo de digitacao do nome 
+        font-size: 100%;
+        border-radius: 5px;
+        border: solid #aaaaaa; // cor pra border
+        padding-left: 5px;
+
+
+        &[type=tel]{
+
+            width: 140px;
+        }
+
+        &[type=email] {
+
+         width: 250px;
+        }
+        &[type=date] {
+
+            width:150px ;
+        }
+
+        &[type=submit]{
+
+            padding: 4px 10px;
+            height: inherit; // herda a altura do padrão
+        }
+    
+      }
+   }  
+}
