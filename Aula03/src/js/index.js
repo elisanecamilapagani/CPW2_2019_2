@@ -24,7 +24,7 @@ var contatos = [
     {
         nome: 'Cristiane Pagani',
         telefone: '(67) 96799077',
-        email: 'daiane@email.com',
+        email: 'cristiane@email.com',
         dataNascimento: '18/01/2000'
     },
     {
@@ -149,9 +149,9 @@ function criarCorpoTabela() {
         let celulaEmail = document.createElement('td');
         celulaEmail.innerText = contatos[i].email;
         linha.appendChild(celulaEmail);
-        let celulaDataNasc = document.createElement('td');
-        celulaDataNasc.innerText = contatos[i].dataNascimento;
-        linha.appendChild(celulaDataNasc);
+        let celuladataNascimento = document.createElement('td');
+        celuladataNascimento.innerText = contatos[i].dataNascimento;
+        linha.appendChild(celuladataNascimento);
 
         // Adiciona a nova linha no corpo da tabela
         corpoTabela.appendChild(linha);
@@ -181,13 +181,13 @@ function renderizarCardsContatos() {
           let email = document.createElement("span");
           email.innerText = contato.email;
           let DataNascimento= document.createElement("span");
-          dataNascimento.innerText = contato.dataNascimento;
+          dataNascimento.innerText = contato.dataNasc;
 
           card.appendChild(inicialNome);
           card.appendChild(nome);
           card.appendChild(telefone);
           card.appendChild(email);
-          card.appendChild(dataNascimento);
+          card.appendChild(DataNascimento);
           areaListagemContatos.appendChild(card);
       });
 

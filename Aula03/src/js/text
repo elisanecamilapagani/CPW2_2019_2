@@ -35,4 +35,8 @@ trabalhar com substr(1 mais o elemento que vem depois do que acabo)
  ex:
  substr(1, 6 ) // considerando que a string tenha 5 posições 
 
+ elementos com display inline nao pode receber configuracao de margem.
+  caso vc precise aplicar margem em elementos que possua exibicao em linha 
+ (display inline ),altere o valor da propriedade display para display-block.
+
 
