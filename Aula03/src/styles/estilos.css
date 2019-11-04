@@ -54,7 +54,7 @@ body {
   width: 300px;
 }
 #formularioContato input[type=tel] {
-  width: 140px;
+  width: 150px;
 }
 #formularioContato input[type=email] {
   width: 200px;
@@ -66,6 +66,7 @@ body {
   background-color: #5c97bf;
   color: white;
   border: none;
+  text-shadow: 1px 1px 1px #555555;
 }
 
 #tabelaContatos {
@@ -121,7 +122,7 @@ body {
 #cardsContatos div {
   border: 1px solid #5c97bf;
   margin: 0px auto 10px auto;
-  width: 95%;
+  width: 96%;
   border-radius: 5px;
   padding: 10px 7px, 7px, 7px;
 }
@@ -156,6 +157,13 @@ body {
 
   #tabelaContatos {
     display: none;
+  }
+
+  #formularioContato {
+    width: 90%;
+  }
+  #formularioContato input [type=text] {
+    width: 90px;
   }
 }
 

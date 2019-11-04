@@ -56,7 +56,7 @@ body {
         }
 
         &[type=tel] {
-            width: 140px;
+            width: 150px;
         }
 
         &[type=email] {
@@ -70,6 +70,7 @@ body {
             background-color: $cor-botao-primario;
             color: white;
             border: none;
+            text-shadow: 1px 1px 1px #555555;
         }
     }
 }
@@ -151,7 +152,7 @@ body {
      
          border: 1px solid $cor-borda;
         margin: 0px auto 10px auto;
-        width: 95%;
+        width: 96%;
         border-radius: 5px;
         padding: 10px 7px, 7px,7px;
         span{
@@ -200,5 +201,17 @@ body {
 
     #tabelaContatos{
         display: none;
+    }
+
+
+    #formularioContato { 
+       
+         width: 90%;
+          
+        
+          input [type = text]{
+
+           width: 90px;
+    }
     }
 }
