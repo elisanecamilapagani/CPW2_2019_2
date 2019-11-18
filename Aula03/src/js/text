@@ -40,3 +40,12 @@ trabalhar com substr(1 mais o elemento que vem depois do que acabo)
  (display inline ),altere o valor da propriedade display para display-block.
 
 
+
+text-align: center;
+     vai centralizar o conteúdo que está dentro da input, nao vai centralizar a div input.
+     centralizar o conteudo ex  centralizar nome elisane
+ 
+      margin: 30px auto 10px auto; só funciona se tiver display block.  isso nao funciona em display
+       onlaine. só com display block. 
+    display: block;
+

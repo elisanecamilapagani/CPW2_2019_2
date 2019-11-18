@@ -33,7 +33,7 @@ body {
     padding: 10px;
     border: 1px solid $cor-borda;
     // Ajuste a largura ao seu gosto!
-    width: 95%;
+    width: 90%;
     margin: auto;
 
     label,
@@ -192,6 +192,27 @@ body {
 
 }
 
+//campo filtro
+
+#filtro {
+    margin: 30px auto 10px auto;
+    display: block;
+    border-radius: 20px;
+    width: 40%;
+    height: 35px;
+    border: 1px solid #ccc;
+    outline: none;
+     text-indent: 20px;
+   // text-align: center;
+   font-size: 95%;
+
+
+   &:hover {
+       border: none;
+       box-shadow: 2px 2px 5px #aaaaaa,  -1px -1px 3px  #aaaaaa;
+   }
+}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -204,14 +225,19 @@ body {
     }
 
 
-    #formularioContato { 
+    #formularioContatos { 
        
          width: 90%;
           
         
-          input [type = text]{
+          input [type=text]{
 
-           width: 90px;
+           width:250px;
+        }
     }
+
+    #filtro{
+        width: 88%;
+
     }
 }
