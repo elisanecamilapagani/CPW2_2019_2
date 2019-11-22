@@ -49,3 +49,44 @@ text-align: center;
        onlaine. só com display block. 
     display: block;
 
+
+    o que é NVC
+
+    organização do códigos
+    n--> faz interacao com usuário
+    view pega codigo da dela mandar codigo na tabela
+    controllrs controla os algoritmos
+
+var contatos = [
+    {
+        nome: 'Elisane Camila Pagani',
+        telefone: '(67) 81245072',
+        email: 'elisanecamila20@gmail.com',
+        dataNascimento: '03/09/1996'
+    },
+    {
+        nome: 'Eloisa Pagani',
+        telefone: '(67) 9999999',
+        email: 'eloisa@gmail.com',
+        dataNascimento: '12/01/1994'
+    },
+    {
+        nome: 'Raquel Pagani',
+        telefone: '(67) 88888888',
+        email: 'raquel@gmail.com',
+        dataNascimento: '03/11/1982'
+    },
+    {
+        nome: 'Cristiane Pagani',
+        telefone: '(67) 96799077',
+        email: 'cristiane@email.com',
+        dataNascimento: '18/01/2000'
+    },
+    {
+        nome: 'Geovane Pagani',
+        telefone: '(67) 981345678',
+        email: 'geovani@gmail.com',
+        dataNascimento: '04/02/1995'
+    }
+];
+

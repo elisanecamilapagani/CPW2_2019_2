@@ -2,38 +2,24 @@
  * Nosso BD fake!
  * (in memory DB)
  */
-var contatos = [
-    {
-        nome: 'Elisane Camila Pagani',
-        telefone: '(67) 81245072',
-        email: 'elisanecamila20@gmail.com',
-        dataNascimento: '03/09/1996'
-    },
-    {
-        nome: 'Eloisa Pagani',
-        telefone: '(67) 9999999',
-        email: 'eloisan@gmail.com',
-        dataNascimento: '12/01/1994'
-    },
-    {
-        nome: 'Raquel Pagani',
-        telefone: '(67) 88888888',
-        email: 'raquel@gmail.com',
-        dataNascimento: '03/11/1982'
-    },
-    {
-        nome: 'Cristiane Pagani',
-        telefone: '(67) 96799077',
-        email: 'cristiane@email.com',
-        dataNascimento: '18/01/2000'
-    },
-    {
-        nome: 'Geovane Pagani',
-        telefone: '(67) 981345678',
-        email: 'geovani@gmail.com',
-        dataNascimento: '04/02/1995'
-    }
-];
+ 
+  // deve serguir a ondem do que foi estabelecido em  class Contato em Contato.js
+ let elisane = new Contato( 'Elisane Camila Pagani',  '(67) 81245072',   '03/09/1996', 
+ 'elisanecamila20@gmail.com');
+let eloisa = new Contato ('Eloisa Pagani', '(67) 9999999',
+ 'eloisa@gmail.com','12/01/1994');
+ let raquel = new Contato  (' Raquel Pagani', '(67) 88888888',
+   'raquel@gmail.com', '03/11/1982');
+ let cristiane = new Contato ('Cristiane Pagani' ,'(67) 96799077', 'cristiane@email.com',  '18/01/2000')
+ let geovane = new Contato  ( 'Geovane Pagani','(67) 981345678', 'geovani@gmail.com',
+ '04/02/1995')
+var contatos =  [
+    elisane, eloisa, raquel, cristiane, geovane
+ ];
+
+  
+ 
+
 renderizarTabelaContatos(contatos);
 renderizarCardsContatos(contatos);
 
