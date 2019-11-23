@@ -179,11 +179,7 @@ body {
     width: 90%;
   }
   #formularioContatos input [type=text] {
-    width: 250px;
-  }
-
-  #filtro {
-    width: 88%;
+    width: 100px;
   }
 }
 
