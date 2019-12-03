@@ -1,13 +1,11 @@
 class ContatoView {
 
-     constructor (contatos) {
+    constructor(contatos) {
+        this.controllers = new ContatoControllers( contatos);
+        this.renderizarCardsContatos();
+        this.renderizarTabelaContatos();
 
-     ]this.contatos = contatos;
-      this.contatosFiltrados = contatos;
-       this. renderizarCardsContatos ( );
-       this.renderizarTabelaContatos ( );
-
-     }
+    }
 
     salvarContato(event) {
         // Inibe a recarga da página
@@ -24,21 +22,23 @@ class ContatoView {
         let dataNascimento = $('#dataNascimento').val();
 
         // Cria um objeto de contato
-        let contato = new Contato( nome, telefone, email, dataNascimento);
+        let contato = new Contato(nome, telefone, email, dataNascimento);
 
         // Adiciona o contato no nosso BD (no final do vetor)
 
-         this.contatos.push(contato);
+         this.controllers.salvar(contato);
 
         // Invoca a renderização da tabela
-        renderizarTabelaContatos( );
+       this. renderizarTabelaContatos();
 
         //invoca a renderização dos cards
-        renderizarCardsContatos( );
+        this.renderizarCardsContatos();
     }
 
     renderizarTabelaContatos() {
-        if (this.contatosFiltrados. length > 0) {
+
+        let contatos = this.controllers.recuperarTodos();
+        if (contatos.length > 0) {
             let areaListagemContatos =
                 document.getElementById('tabelaContatos');
 
@@ -56,7 +56,7 @@ class ContatoView {
             // Adiciona o cabeçalho dentro da tabela
             tabela.appendChild(cabecalho);
 
-            let corpoTabela = criarCorpoTabela( );
+            let corpoTabela =this. criarCorpoTabela();
             // Adiciona o corpo da tabela na tabela
             tabela.appendChild(corpoTabela);
 
@@ -65,7 +65,7 @@ class ContatoView {
         }
     }
 
-    criarCabecalhoTabela( ) {
+    criarCabecalhoTabela() {
         /**
         * Cria o cabeçalho da tabela
         */
@@ -93,32 +93,34 @@ class ContatoView {
         return cabecalho;
     }
 
-    criarCorpoTabela( ) {
+    criarCorpoTabela() {
         /**
          * Cria o corpo da tabela
          */
         let corpoTabela = document.createElement('tbody');
 
+        let contatos = this.controllers.recuperarTodos();
+
         /**
          * Cria a linhas de contatos
          */
-        for (let i = 0; i < this. contatosFiltrados. length; i++) {
+        for (let i = 0; i < contatos.length; i++) {
             /**
              * Cria uma nova linha no corpo da tabela
              */
             let linha = document.createElement('tr');
 
             let celulaNome = document.createElement('td');
-            celulaNome.innerText = this.contatosFiltrados [i].nome;
+            celulaNome.innerText = contatos[i].nome;
             linha.appendChild(celulaNome);
             let celulaTelefone = document.createElement('td');
-            celulaTelefone.innerText = this.contatosFiltrados [i].telefone;
+            celulaTelefone.innerText = contatos[i].telefone;
             linha.appendChild(celulaTelefone);
             let celulaEmail = document.createElement('td');
-            celulaEmail.innerText = this.contatosFiltrados [i].email;
+            celulaEmail.innerText = contatos[i].email;
             linha.appendChild(celulaEmail);
             let celuladataNascimento = document.createElement('td');
-            celuladataNascimento.innerText = this.contatosFiltrados [i].dataNascimento;
+            celuladataNascimento.innerText = contatos[i].dataNascimento;
             linha.appendChild(celuladataNascimento);
 
             // Adiciona a nova linha no corpo da tabela
@@ -128,8 +130,11 @@ class ContatoView {
         return corpoTabela;
     }
 
-    renderizarCardsContatos( ) {
-        if (this.contatosFiltrados. length > 0) {
+    renderizarCardsContatos() {
+
+        let contatos = this.controllers.recuperarTodos();
+
+        if (contatos.length > 0) {
 
             let areaListagemContatos = document.getElementById("cardsContatos");
 
@@ -140,7 +145,7 @@ class ContatoView {
              ao em vex de usar loop laco de repeticao
              utilizamos a funcao forEach
             */
-            this.contatosFiltrados. forEach(function (contato) {
+            contatos.forEach(function (contato) {
                 let card = document.createElement("div");
                 let inicialNome = document.createElement('span');
                 inicialNome.innerText = contato.nome.charAt(0);
@@ -162,41 +167,22 @@ class ContatoView {
                 areaListagemContatos.appendChild(card);
             });
 
-
         }
 
     }
 
     filtrarContatos() {
-        // se tiver pelo menos um contato
-        if (this.contatos.length > 0) {
-            let filtro = document.getElementById("filtro").value;
-            filtro = filtro.toLowerCase();
+        let filtro = document.getElementById("filtro").value;
+        filtro = filtro.toLowerCase();
 
-            /**
-             * filtra os contatos de acordo com os texto 
-             * digitado pelo usuário no campo de filtro
-             * 
-             */
+        /**
+         * filtra os contatos de acordo com os texto 
+         * digitado pelo usuário no campo de filtro
+         * 
+         */
+        this.controllers.filtrar(filtro);
 
-            this.contatosFiltrados = this.contatos.filter(function (contato) {
-                let nome = contato.nome.toLowerCase();
-                let email = contato.email.toLowerCase();
-
-                /**
-                 * se o nome ou email do cantato conter o filtro do usuario,
-                 * retorne contatos
-                 */
-                if (nome.includes(filtro) || email.includes(filtro)) {
-                    return contatos;
-                }
-            });
-
-            renderizarCardsContatos( );
-            renderizarTabelaContatos( );
-
-
-        }
+       this. renderizarCardsContatos();
+      this.  renderizarTabelaContatos();
     }
-
 }

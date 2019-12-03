@@ -21,7 +21,7 @@ body {
   vertical-align: middle;
 }
 #header img {
-  width: 70px;
+  width: 60px;
   margin-right: 20px;
 }
 #header h1 {
@@ -176,7 +176,7 @@ body {
   }
 
   #formularioContatos {
-    width: 90%;
+    width: 100%;
   }
   #formularioContatos input [type=text] {
     width: 100px;

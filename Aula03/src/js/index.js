@@ -4,8 +4,8 @@
  */
 
 // deve serguir a ondem do que foi estabelecido em  class Contato em Contato.js
-let elisane = new Contato('Elisane Camila Pagani', '(67) 81245072', '03/09/1996',
-    'elisanecamila20@gmail.com');
+let elisane = new Contato('Elisane Camila Pagani', '(67) 81245072',  'elisanecamila20@gmail.com',
+'03/09/1996',);
 let eloisa = new Contato('Eloisa Pagani', '(67) 9999999',
     'eloisa@gmail.com', '12/01/1994');
 let raquel = new Contato(' Raquel Pagani', '(67) 88888888',
