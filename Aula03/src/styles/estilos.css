@@ -21,11 +21,12 @@ body {
   vertical-align: middle;
 }
 #header img {
-  width: 60px;
+  width: 30px;
   margin-right: 20px;
 }
 #header h1 {
   font-family: "decorativa";
+  text-align: center;
   color: white;
   text-shadow: 2px 2px #555555;
 }

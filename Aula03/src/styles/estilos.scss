@@ -16,15 +16,16 @@ body {
     }
 
     img {
-        width: 60px;
+        width: 30px;
         margin-right: 20px;
     }
 
     h1 {
         font-family: $fonte-decorativa;
+         text-align: center;
         color: white;
         // Opcional
-        text-shadow: 2px 2px #555555;
+       text-shadow: 2px 2px #555555;
     }
 }
 
@@ -99,8 +100,10 @@ body {
 
             // Atinge apenas as linhas pares
             &:nth-child(even) {
+                
                 background-color: $cor-sombras;
-            }
+        
+            } 
 
             td {
                 font-size: 90%;

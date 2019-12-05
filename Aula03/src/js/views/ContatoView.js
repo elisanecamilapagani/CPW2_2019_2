@@ -142,7 +142,7 @@ class ContatoView {
             areaListagemContatos.innerHTML = " ";
 
             /*
-             ao em vex de usar loop laco de repeticao
+             ao em vez de usar loop laco de repeticao
              utilizamos a funcao forEach
             */
             contatos.forEach(function (contato) {
