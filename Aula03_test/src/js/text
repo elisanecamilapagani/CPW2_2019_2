@@ -1,0 +1,92 @@
+o texto dentro do noe a coluna fica dentro da tag th
+
+o texto dentro  das celulas de dados do corpo da tabela quando a tag th fica dentro de uma tag tr
+
+em uma tabela criada de forma correta tanto a tag td quando a tag fica dentro do th
+
+trabalhar com celular 
+
+cards 
+ <div id="cardsContatos"></div>  para celular 
+ funcao anonima --> funcao que nao tem nome
+
+ errow function  forma mais antiga
+
+ function faz alguma coisa (contatos){
+
+ }
+
+outro ex:
+ function faz alguma coisa = contatos => 
+
+contatos.forEach(contato=> {
+});
+
+   contatos.forEach(function(contato) { });
+   contatos.nome = 'eli';
+   é a mesma coisa que fazer isso
+
+   for (let i = 0 i< contatos.length; i++) {
+       contatos [i].nome = 'eli';
+   }
+
+
+trabalhar com substr(1 mais o elemento que vem depois do que acabo)
+ ex:
+ substr(1, 6 ) // considerando que a string tenha 5 posições 
+
+ elementos com display inline nao pode receber configuracao de margem.
+  caso vc precise aplicar margem em elementos que possua exibicao em linha 
+ (display inline ),altere o valor da propriedade display para display-block.
+
+
+
+text-align: center;
+     vai centralizar o conteúdo que está dentro da input, nao vai centralizar a div input.
+     centralizar o conteudo ex  centralizar nome elisane
+ 
+      margin: 30px auto 10px auto; só funciona se tiver display block.  isso nao funciona em display
+       onlaine. só com display block. 
+    display: block;
+
+
+    o que é NVC
+
+    organização do códigos
+    n--> faz interacao com usuário
+    view pega codigo da dela mandar codigo na tabela
+    controllrs controla os algoritmos
+
+var contatos = [
+    {
+        nome: 'Elisane Camila Pagani',
+        telefone: '(67) 81245072',
+        email: 'elisanecamila20@gmail.com',
+        dataNascimento: '03/09/1996'
+    },
+    {
+        nome: 'Eloisa Pagani',
+        telefone: '(67) 9999999',
+        email: 'eloisa@gmail.com',
+        dataNascimento: '12/01/1994'
+    },
+    {
+        nome: 'Raquel Pagani',
+        telefone: '(67) 88888888',
+        email: 'raquel@gmail.com',
+        dataNascimento: '03/11/1982'
+    },
+    {
+        nome: 'Cristiane Pagani',
+        telefone: '(67) 96799077',
+        email: 'cristiane@email.com',
+        dataNascimento: '18/01/2000'
+    },
+    {
+        nome: 'Geovane Pagani',
+        telefone: '(67) 981345678',
+        email: 'geovani@gmail.com',
+        dataNascimento: '04/02/1995'
+    }
+];
+

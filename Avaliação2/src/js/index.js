@@ -5,3 +5,7 @@ function exibirLembrete() {
     paragrafo.innerText=lembrete;
     resposta.appendChild(paragrafo);
 }
+
+
+
+

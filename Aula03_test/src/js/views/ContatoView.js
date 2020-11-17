@@ -1,4 +1,5 @@
-class ContatoView {
+import ContatoControllers from '../controllers/ContatoControllers'
+  export   default  class ContatoView {
 
     constructor(contatos) {
         this.controllers = new ContatoControllers( contatos);
@@ -16,10 +17,11 @@ class ContatoView {
          * val() -> value
          */
         // Recupera os valores do formulário
-        let nome = $('#nome').val();
-        let telefone = $('#telefone').val();
-        let email = $('#email').val();
-        let dataNascimento = $('#dataNascimento').val();
+        let nome = $('#nome').value;
+        let telefone = $('#telefone').vlue;
+        let email = $('#email').value;
+     //   let dataNascimento = $('#dataNascimento').val();
+     
 
         // Cria um objeto de contato
         let contato = new Contato(nome, telefone, email, dataNascimento);

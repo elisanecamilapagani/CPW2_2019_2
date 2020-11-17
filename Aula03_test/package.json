@@ -1,0 +1,21 @@
+{
+  "name": "aula03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "jest": "^26.6.3",
+    "latest": "^0.2.0",
+    "parcel-bundler": "^1.12.4",
+    "posthtml-include": "^1.6.0"
+  }
+}
